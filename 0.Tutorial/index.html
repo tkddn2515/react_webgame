@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    /*
+    class LikeButton extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          liked: false,
+        }
+      }
+
+      render() {//속성은 카멜케이스로!
+        //return e('button', { onClick: () => {this.setState({ liked : !this.state.liked })}, type:'submit'}, this.state.liked ? 'Like' : 'Liked'); //<button>Like</button>
+        return <button type='submit' onClick={() => {this.setState({ liked : !this.state.liked })}}>{this.state.liked ? 'Like' : 'Liked'}</button>
+      }
+    }
+    */
+    /* 함수형 컴포넌트
+    const LikeButton = () => {
+      return <div>Hello</div>
+    }
+    */
+
+  </script>
+  <script type="text/babel">
+    //ReactDOM.render(e(LikeButton), document.querySelector('#root'));
+    ReactDOM.render(<div><LikeButton /><LikeButton /><LikeButton /><LikeButton /></div>, document.querySelector('#root'));
+  </script>
+</body>
+</html>
